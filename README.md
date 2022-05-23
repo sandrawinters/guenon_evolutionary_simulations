@@ -8,7 +8,7 @@ Please cite:
 Winters S & Higham JP. 2022. Simulated evolution of mating signal diversification in a primate radiation. Proceedings of the Royal Society B: Biological Sciences. 
 
 Usage: 
-guenonEvSim(<type of mate choice>, <number of coevolving populations>, <proportion of evolution in allopatry>, <max hybrid fitness>, <conspecific encounter frequency>)
+guenonEvSim({type of mate choice}, {number of coevolving populations}, {proportion of evolution in allopatry}, {max hybrid fitness}, {conspecific encounter frequency})
 
 Results will be saved to the current directory, in a folder named based on the combination of parameters. Results are contained in matrices of the form: individual features (15 face space features, male quality, female mating bias) x number of individuals per population x number of populations
 
