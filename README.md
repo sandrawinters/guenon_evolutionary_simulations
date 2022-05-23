@@ -5,7 +5,7 @@ MATLAB code implementing evolutionary simulations of face pattern diversificatio
 Written by Sandra Winters, sandra.winters@nyu.edu
 
 Please cite: 
-Winters S & Higham JP. 2022. The structure of species discrimination signals across a primate radiation. Proceedings of the Royal Society B: Biological Sciences. 
+Winters S & Higham JP. 2022. Simulated evolution of mating signal diversification in a primate radiation. Proceedings of the Royal Society B: Biological Sciences. 
 
 Usage: 
 guenonEvSim(<type of mate choice>, <number of coevolving populations>, <proportion of evolution in allopatry>, <max hybrid fitness>, <conspecific encounter frequency>)
