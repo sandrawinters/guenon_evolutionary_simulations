@@ -28,7 +28,7 @@ faceEv = NaN(nfeatAll,nind,npop,genPts);
 faceEvMean = NaN(nfeatAll,npop,genPts);
 faceEvSD = NaN(nfeatAll,npop,genPts);
 compGen = 0;
-allParents = NaN(4,nind,npop,genPts);
+allParents = NaN(3,nind,npop,genPts);
 for i = 1:genPts
     load([saveDir '/generations/gen' num2str(compGen) '.mat'],'featVals','parents')
     faceEv(:,:,:,i) = featVals(:,:,:);
@@ -77,8 +77,6 @@ end
 save([saveDir '/simulation_data.mat'],'faceEvPop','faceEvGen','faceEvMean','faceEvSD', ...
     'meanDistCon','sdDistCon', 'meanDistHetero','sdDistHetero','parents')
 
-%% convert output data to tarball 
+%% convert output data to tarball
 tar([saveDir '/generations.tar'],'*.mat',[saveDir '/generations'])
 rmdir([saveDir '/generations'],'s')
-
-
