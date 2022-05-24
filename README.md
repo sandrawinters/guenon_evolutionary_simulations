@@ -17,7 +17,7 @@ guenonEvSim('random_mating', 4, 0.1, 0.02, 0.5)
 Results will be saved to the current directory, in a folder named based on the combination of parameters. Results contain the following:  
 * .tar file that contains folders of simulation results for each iteration; each iteration has a .mat file for each saved generation, which contains the following variables:   
 (1) featVals: the features of each offspring from that generation, encoded as individual features (15 face space features, male quality, female mating bias) x number of individuals per population x number of populations  
-(2) parents: the parents of each offspring, encoded as parental data [mother, father, father's population] x number of individuals per population x number of populations. 
+(2) parents: the parents of each offspring, encoded as parental data (mother, father, father's population) x number of individuals per population x number of populations. 
 * .mat file that contains the following variables:  
 (1) faceEvMean: the average value of each feature (15 face space features, male quality, female mating bias) for all populations across generations (features x [number of populations * number of saved generations])  
 (2) faceEvSD: the standard deviation of each feature (15 face space features, male quality, female mating bias) for all populations across generations (features x [number of populations * number of saved generations])  
@@ -27,6 +27,6 @@ Results will be saved to the current directory, in a folder named based on the c
 (6) meanDistHetero: mean pairwise distance between faces in the population and faces from other populations (number of saved generations x number of populations)    
 (7) sdDistCon: standard deviation of pairwise distances between faces in the population (number of saved generations x number of populations)  
 (8) sdDistHetero: standard deviation of pairwise distances between faces in the population and faces from other populations (number of saved generations x number of populations)  
-(9) parents: parents of each offspring across all saved generations (parental data [mother, father, father's population] x number of individuals per population x number of populations x number of saved generations) 
+(9) parents: parents of each offspring across all saved generations (parental data (mother, father, father's population) x number of individuals per population x number of populations x number of saved generations) 
   
 For more details and descriptions of each parameter, see the Supplementary Methods of the paper above. 
